@@ -24,7 +24,10 @@ const value_1 = btn_1.addEventListener('click',clicked = () => {
 	})
 
 	function updateDisplay(val) {
-		document.querySelector(".display").innerHTML = val;
+		array.forEach(element => {
+			
+		});
+		document.getElementById("btn").innerHTML = val;
 	}
 // console.log(value)
 

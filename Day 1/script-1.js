@@ -1,13 +1,13 @@
 // let counter_2 = 0;
-let counter_2 = 1;
 let btn = document.querySelectorAll('.btn')
-
-const val = btn.forEach(el => {
-	el.addEventListener('click', (e)=> {
-		count = counter_2 ++ ;
-	document.querySelector('.display').innerHTML = count
+const val = btn.forEach((el) => {
+	let count = 0
+	el.addEventListener('click', function() {
+		// count = counter_2 ++ ;
+	this.innerHTML = `Clicked ${count++}`
 	})
 })
+
 
 //First Logic.
 // const value = btn.forEach(addEventListener('click',clicked = () => {
